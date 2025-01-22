@@ -1,0 +1,19 @@
+create a vpc, 1 public subnet, for bastian instance   (vpc1)
+
+another vpc with 2 public and private subnets (vpc2)
+
+a transit gatway for connecting bost vpc
+
+
+
+
+one intsance in vpc 1 ie. bastian instance
+
+two launch templates for two autoscalling groups 
+
+one LT for Frontend ie. nginx         (vpc2)
+another LT for backend ie. tomcat     (vpc2)
+
+for database we can use RDS   (vpc2)
+
+one seperate instance without ASG for maven in vpc2
